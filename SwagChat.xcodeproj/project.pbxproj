@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E78D4C951F27285EA652DBE /* Pods_SwagChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2C47BE626209529E27BA3 /* Pods_SwagChat.framework */; };
 		B837E2D71D19AC0D00A145BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B837E2D61D19AC0D00A145BC /* AppDelegate.swift */; };
-		B837E2D91D19AC0D00A145BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B837E2D81D19AC0D00A145BC /* ViewController.swift */; };
+		B837E2D91D19AC0D00A145BC /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B837E2D81D19AC0D00A145BC /* LogInViewController.swift */; };
 		B837E2DC1D19AC0D00A145BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B837E2DA1D19AC0D00A145BC /* Main.storyboard */; };
 		B837E2DE1D19AC0D00A145BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B837E2DD1D19AC0D00A145BC /* Assets.xcassets */; };
 		B837E2E11D19AC0D00A145BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B837E2DF1D19AC0D00A145BC /* LaunchScreen.storyboard */; };
+		B881EBD41D19B36200D5F1C0 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B881EBD31D19B36200D5F1C0 /* ChatViewController.swift */; };
+		B881EBD61D19C61700D5F1C0 /* MessageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B881EBD51D19C61700D5F1C0 /* MessageViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		524C3B8A49D85BF25A0CFB34 /* Pods-SwagChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwagChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwagChat/Pods-SwagChat.debug.xcconfig"; sourceTree = "<group>"; };
+		B4A2C47BE626209529E27BA3 /* Pods_SwagChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwagChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B837E2D31D19AC0D00A145BC /* SwagChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwagChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B837E2D61D19AC0D00A145BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B837E2D81D19AC0D00A145BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B837E2D81D19AC0D00A145BC /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		B837E2DB1D19AC0D00A145BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B837E2DD1D19AC0D00A145BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B837E2E01D19AC0D00A145BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B837E2E21D19AC0D00A145BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B881EBD31D19B36200D5F1C0 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		B881EBD51D19C61700D5F1C0 /* MessageViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewCell.swift; sourceTree = "<group>"; };
+		C35C8D476D5AD89187F027FE /* Pods-SwagChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwagChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwagChat/Pods-SwagChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E78D4C951F27285EA652DBE /* Pods_SwagChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21EF7A823CDCA7921F8E34DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				524C3B8A49D85BF25A0CFB34 /* Pods-SwagChat.debug.xcconfig */,
+				C35C8D476D5AD89187F027FE /* Pods-SwagChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B837E2CA1D19AC0D00A145BC = {
 			isa = PBXGroup;
 			children = (
 				B837E2D51D19AC0D00A145BC /* SwagChat */,
 				B837E2D41D19AC0D00A145BC /* Products */,
+				21EF7A823CDCA7921F8E34DD /* Pods */,
+				D5195C0D32EDA4E346EBA0C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +75,23 @@
 			isa = PBXGroup;
 			children = (
 				B837E2D61D19AC0D00A145BC /* AppDelegate.swift */,
-				B837E2D81D19AC0D00A145BC /* ViewController.swift */,
+				B837E2D81D19AC0D00A145BC /* LogInViewController.swift */,
 				B837E2DA1D19AC0D00A145BC /* Main.storyboard */,
 				B837E2DD1D19AC0D00A145BC /* Assets.xcassets */,
 				B837E2DF1D19AC0D00A145BC /* LaunchScreen.storyboard */,
 				B837E2E21D19AC0D00A145BC /* Info.plist */,
+				B881EBD31D19B36200D5F1C0 /* ChatViewController.swift */,
+				B881EBD51D19C61700D5F1C0 /* MessageViewCell.swift */,
 			);
 			path = SwagChat;
+			sourceTree = "<group>";
+		};
+		D5195C0D32EDA4E346EBA0C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4A2C47BE626209529E27BA3 /* Pods_SwagChat.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B837E2E51D19AC0D00A145BC /* Build configuration list for PBXNativeTarget "SwagChat" */;
 			buildPhases = (
+				3E32CFC8B5ADB1E1D1A6EC8C /* [CP] Check Pods Manifest.lock */,
 				B837E2CF1D19AC0D00A145BC /* Sources */,
 				B837E2D01D19AC0D00A145BC /* Frameworks */,
 				B837E2D11D19AC0D00A145BC /* Resources */,
+				F949345026938B58A2AA6EF6 /* [CP] Embed Pods Frameworks */,
+				EAD498BA2E89706BB3F81C48 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +129,7 @@
 				TargetAttributes = {
 					B837E2D21D19AC0D00A145BC = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 6ZD82QXX95;
 					};
 				};
 			};
@@ -130,12 +164,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3E32CFC8B5ADB1E1D1A6EC8C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EAD498BA2E89706BB3F81C48 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwagChat/Pods-SwagChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F949345026938B58A2AA6EF6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwagChat/Pods-SwagChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B837E2CF1D19AC0D00A145BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B837E2D91D19AC0D00A145BC /* ViewController.swift in Sources */,
+				B881EBD61D19C61700D5F1C0 /* MessageViewCell.swift in Sources */,
+				B837E2D91D19AC0D00A145BC /* LogInViewController.swift in Sources */,
+				B881EBD41D19B36200D5F1C0 /* ChatViewController.swift in Sources */,
 				B837E2D71D19AC0D00A145BC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,23 +331,31 @@
 		};
 		B837E2E61D19AC0D00A145BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 524C3B8A49D85BF25A0CFB34 /* Pods-SwagChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SwagChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Codepath.SwagChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		B837E2E71D19AC0D00A145BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C35C8D476D5AD89187F027FE /* Pods-SwagChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SwagChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Codepath.SwagChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -286,6 +378,7 @@
 				B837E2E71D19AC0D00A145BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
